@@ -7,10 +7,17 @@
 const DAY_OF_GIVING =
   new Date("2027-04-08T00:00:00-04:00").getTime();
 
-const daysEl = document.getElementById("days");
-const hoursEl = document.getElementById("hours");
-const minutesEl = document.getElementById("minutes");
-const secondsEl = document.getElementById("seconds");
+const daysEl =
+  document.getElementById("days");
+
+const hoursEl =
+  document.getElementById("hours");
+
+const minutesEl =
+  document.getElementById("minutes");
+
+const secondsEl =
+  document.getElementById("seconds");
 
 
 function pad(value, length = 2) {
@@ -23,7 +30,6 @@ function updateCountdown() {
     DAY_OF_GIVING - Date.now();
 
 
-  // Event has arrived
   if (remaining <= 0) {
     daysEl.textContent = "000";
     hoursEl.textContent = "00";
