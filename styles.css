@@ -5,9 +5,6 @@
   --faint: #57534d;
   --line: #282724;
   --gold: #ffcc00;
-
-  /* Different color specifically for
-     the USEFUL LINKS heading */
   --section-heading: #e0b500;
 }
 
@@ -43,7 +40,6 @@ body {
 a,
 button {
   font: inherit;
-
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -60,13 +56,7 @@ button {
 
   z-index: 0;
 
-  color:
-    rgba(
-      255,
-      255,
-      255,
-      0.025
-    );
+  color: rgba(255, 255, 255, 0.025);
 
   font-family:
     Impact,
@@ -89,12 +79,11 @@ button {
 
 
 /* =========================================
-   SITE CONTAINER
+   SITE
 ========================================= */
 
 .site {
   position: relative;
-
   z-index: 1;
 
   width:
@@ -103,8 +92,7 @@ button {
       calc(100% - 48px)
     );
 
-  margin:
-    0 auto;
+  margin: 0 auto;
 }
 
 
@@ -116,7 +104,6 @@ button {
   min-height: 104px;
 
   display: flex;
-
   align-items: center;
   justify-content: space-between;
 
@@ -130,14 +117,13 @@ button {
 
 .identity {
   display: flex;
-
   align-items: center;
 
   gap: 18px;
 }
 
 
-/* Larger logo */
+/* CIRCULAR LOGO */
 
 .identity img {
   width: 66px;
@@ -148,6 +134,8 @@ button {
   border:
     1px solid
     #4a4741;
+
+  border-radius: 50%;
 }
 
 
@@ -208,12 +196,12 @@ button {
 ========================================= */
 
 .hero {
-  min-height: 590px;
+  min-height: 560px;
 
   padding:
     66px
     0
-    72px;
+    68px;
 
   border-bottom:
     1px solid
@@ -268,14 +256,10 @@ h1 {
   display: grid;
 
   /*
-    This is the key spacing change.
-
-    Instead of trying to control everything
-    with a tiny line-height, each word line
-    gets actual space between it.
+    Tighter vertically than the previous
+    version, but not smashed together.
   */
-
-  row-gap: 0.13em;
+  row-gap: 0.055em;
 
   margin-top: 46px;
 
@@ -286,7 +270,7 @@ h1 {
       142px
     );
 
-  line-height: 0.78;
+  line-height: 0.8;
 
   letter-spacing:
     -0.04em;
@@ -299,24 +283,27 @@ h1 span {
 
 
 /*
-  Small stagger rather than the
-  extreme zig-zag from before.
+  Stronger horizontal staircase:
+
+  PRESIDENT'S
+       LEADERSHIP
+             COUNCIL
 */
 
 h1 span:nth-child(2) {
-  margin-left: 2.5vw;
+  margin-left: 5vw;
 }
 
 
 h1 .gold {
-  margin-left: 5vw;
+  margin-left: 11vw;
 
   color: var(--gold);
 }
 
 
 /* =========================================
-   HERO LOWER AREA
+   HERO LOWER
 ========================================= */
 
 .hero-lower {
@@ -333,7 +320,7 @@ h1 .gold {
 
   align-items: end;
 
-  margin-top: 64px;
+  margin-top: 54px;
 }
 
 
@@ -382,7 +369,7 @@ h1 .gold {
 
 
 /* =========================================
-   LINKS SECTION
+   LINKS
 ========================================= */
 
 .links {
@@ -396,14 +383,6 @@ h1 .gold {
     var(--line);
 }
 
-
-/*
-  No more "01"
-  No more "Quick Access"
-
-  Useful Links is now just a clear
-  standalone section heading.
-*/
 
 .links-intro {
   margin-bottom: 40px;
@@ -434,9 +413,6 @@ h1 .gold {
 }
 
 
-/* Gold underline reinforces
-   that this is a heading */
-
 .links-intro h2::after {
   content: "";
 
@@ -448,7 +424,8 @@ h1 .gold {
   width: 96px;
   height: 4px;
 
-  background: var(--gold);
+  background:
+    var(--gold);
 }
 
 
@@ -496,8 +473,6 @@ h1 .gold {
 }
 
 
-/* Hover accent */
-
 .link-item::before {
   content: "";
 
@@ -536,8 +511,6 @@ h1 .gold {
 }
 
 
-/* Link numbers */
-
 .link-no {
   color:
     #6e6961;
@@ -550,8 +523,6 @@ h1 .gold {
   font-weight: 700;
 }
 
-
-/* Small category label */
 
 .link-copy small {
   display: block;
@@ -575,8 +546,6 @@ h1 .gold {
 }
 
 
-/* Main link title */
-
 .link-copy strong {
   display: block;
 
@@ -595,8 +564,6 @@ h1 .gold {
     -0.03em;
 }
 
-
-/* Description */
 
 .link-copy em {
   display: block;
@@ -648,8 +615,6 @@ h1 .gold {
     var(--line);
 }
 
-
-/* Date */
 
 .dog-date {
   display: grid;
@@ -712,8 +677,6 @@ h1 .gold {
 }
 
 
-/* Day of Giving text */
-
 .dog-copy h2 {
   margin-top: 8px;
 
@@ -743,8 +706,6 @@ h1 .gold {
   line-height: 1.5;
 }
 
-
-/* Countdown remains secondary */
 
 .dog-count {
   padding-left: 26px;
@@ -914,13 +875,13 @@ footer {
 
 
   .identity img {
-    width: 58px;
-    height: 58px;
+    width: 60px;
+    height: 60px;
   }
 
 
   h1 {
-    row-gap: 0.14em;
+    row-gap: 0.065em;
 
     font-size:
       clamp(
@@ -931,13 +892,17 @@ footer {
   }
 
 
+  /*
+    Still visibly staggered on tablet.
+  */
+
   h1 span:nth-child(2) {
-    margin-left: 2vw;
+    margin-left: 4vw;
   }
 
 
   h1 .gold {
-    margin-left: 4vw;
+    margin-left: 8vw;
   }
 
 
@@ -946,6 +911,8 @@ footer {
       1fr;
 
     gap: 24px;
+
+    margin-top: 48px;
   }
 
 
@@ -996,18 +963,20 @@ footer {
 
 
   .topbar {
-    min-height: 88px;
+    min-height: 92px;
   }
 
 
   .identity {
-    gap: 12px;
+    gap: 13px;
   }
 
 
   .identity img {
-    width: 54px;
-    height: 54px;
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
   }
 
 
@@ -1043,7 +1012,7 @@ footer {
   h1 {
     margin-top: 36px;
 
-    row-gap: 0.16em;
+    row-gap: 0.075em;
 
     font-size:
       clamp(
@@ -1057,18 +1026,22 @@ footer {
 
 
   /*
-    No staggering on phone.
-    It reads cleaner stacked.
+    Keep a subtle staircase even on mobile
+    rather than flattening all three lines.
   */
 
-  h1 span:nth-child(2),
+  h1 span:nth-child(2) {
+    margin-left: 3vw;
+  }
+
+
   h1 .gold {
-    margin-left: 0;
+    margin-left: 6vw;
   }
 
 
   .hero-lower {
-    margin-top: 44px;
+    margin-top: 42px;
   }
 
 
