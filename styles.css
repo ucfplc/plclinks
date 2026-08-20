@@ -101,7 +101,7 @@ button {
 ========================================= */
 
 .topbar {
-  min-height: 104px;
+  min-height: 110px;
 
   display: flex;
   align-items: center;
@@ -123,11 +123,11 @@ button {
 }
 
 
-/* Circular logo */
+/* Larger circular logo on desktop */
 
 .identity img {
-  width: 66px;
-  height: 66px;
+  width: 74px;
+  height: 74px;
 
   object-fit: cover;
 
@@ -527,8 +527,7 @@ h1 .gold {
 
   grid-template-columns:
     44px
-    minmax(0, 1fr)
-    42px;
+    minmax(0, 1fr);
 
   gap: 20px;
 
@@ -557,7 +556,7 @@ h1 .gold {
   position: absolute;
 
   left: 64px;
-  right: 46px;
+  right: 0;
   bottom: 22px;
 
   height: 2px;
@@ -569,8 +568,7 @@ h1 .gold {
   transform-origin: left;
 
   transition:
-    transform
-    180ms ease;
+    transform 180ms ease;
 }
 
 
@@ -648,15 +646,6 @@ h1 .gold {
   line-height: 1.45;
 
   font-style: normal;
-}
-
-
-.arrow {
-  justify-self: end;
-
-  color: var(--text);
-
-  font-size: 23px;
 }
 
 
@@ -936,6 +925,11 @@ footer {
   }
 
 
+  .topbar {
+    min-height: 100px;
+  }
+
+
   .identity img {
     width: 60px;
     height: 60px;
@@ -1164,8 +1158,7 @@ footer {
   .link-item {
     grid-template-columns:
       30px
-      minmax(0, 1fr)
-      28px;
+      minmax(0, 1fr);
 
     gap: 10px;
 
@@ -1175,6 +1168,12 @@ footer {
 
   .link-item:hover {
     transform: none;
+  }
+
+
+  .link-item::before {
+    left: 40px;
+    right: 0;
   }
 
 
