@@ -8,18 +8,23 @@
   --section-heading: #e0b500;
 }
 
+
 * {
   box-sizing: border-box;
 }
+
 
 html {
   min-height: 100%;
 }
 
+
 body {
   margin: 0;
+
   min-width: 320px;
   min-height: 100vh;
+
   overflow-x: hidden;
 
   background: var(--bg);
@@ -30,6 +35,7 @@ body {
     Arial,
     sans-serif;
 }
+
 
 a,
 button {
@@ -44,8 +50,10 @@ button {
 
 .watermark {
   position: fixed;
+
   right: -1vw;
   top: 11vh;
+
   z-index: 0;
 
   color: rgba(255, 255, 255, 0.025);
@@ -56,6 +64,7 @@ button {
     sans-serif;
 
   font-size: clamp(260px, 34vw, 560px);
+
   line-height: 0.7;
   letter-spacing: -0.08em;
 
@@ -70,9 +79,11 @@ button {
 
 .site {
   position: relative;
+
   z-index: 1;
 
   width: min(1180px, calc(100% - 48px));
+
   margin: 0 auto;
 }
 
@@ -82,9 +93,10 @@ button {
 ========================================= */
 
 .topbar {
-  min-height: 126px;
+  min-height: 132px;
 
   display: flex;
+
   align-items: center;
   justify-content: space-between;
 
@@ -93,31 +105,38 @@ button {
   border-bottom: 1px solid var(--line);
 }
 
+
 .identity {
   display: flex;
+
   align-items: center;
-  gap: 20px;
+
+  gap: 21px;
 }
 
 
-/* DESKTOP LOGO — FORCED TO 90PX */
+/* Desktop logo */
 
 .identity img {
-  width: 90px !important;
-  height: 90px !important;
+  width: 95px !important;
+  height: 95px !important;
 
-  flex: 0 0 90px;
+  flex: 0 0 95px;
 
   object-fit: cover;
 
   border: 1px solid #4a4741;
+
   border-radius: 50%;
 }
 
+
 .identity div {
   display: grid;
+
   gap: 4px;
 }
+
 
 .identity span {
   color: var(--gold);
@@ -132,13 +151,16 @@ button {
   letter-spacing: 0.12em;
 }
 
+
 .identity strong {
   font-size: 15px;
   font-weight: 700;
 }
 
+
 .share-button {
   border: 0;
+
   background: transparent;
 
   color: var(--muted);
@@ -152,6 +174,7 @@ button {
 
   cursor: pointer;
 }
+
 
 .share-button:hover {
   color: var(--gold);
@@ -173,6 +196,7 @@ button {
   border-bottom: 1px solid var(--line);
 }
 
+
 .eyebrow {
   margin: 0;
 
@@ -186,9 +210,12 @@ button {
   font-weight: 700;
 
   line-height: 1.5;
+
   letter-spacing: 0.11em;
+
   text-transform: uppercase;
 }
+
 
 h1,
 h2,
@@ -201,6 +228,7 @@ h2,
     sans-serif;
 
   font-weight: 400;
+
   text-transform: uppercase;
 }
 
@@ -219,19 +247,24 @@ h1 {
   font-size: clamp(78px, 10.5vw, 142px);
 
   line-height: 0.8;
+
   letter-spacing: -0.04em;
 }
+
 
 h1 span {
   display: block;
 }
 
+
 h1 span:nth-child(2) {
   margin-left: 5vw;
 }
 
+
 h1 .gold {
   margin-left: 11vw;
+
   color: var(--gold);
 }
 
@@ -254,24 +287,30 @@ h1 .gold {
   margin-top: 54px;
 }
 
+
 .hero-lower > p {
   margin: 0;
 
   color: var(--muted);
 
   font-size: 16px;
+
   line-height: 1.55;
 }
 
+
 .hero-socials {
   display: flex;
+
   flex-wrap: wrap;
+
   justify-content: flex-end;
 
   gap:
     12px
     24px;
 }
+
 
 .hero-socials a {
   color: var(--text);
@@ -285,6 +324,7 @@ h1 .gold {
 
   text-decoration: none;
 }
+
 
 .hero-socials a:hover {
   color: var(--gold);
@@ -304,9 +344,11 @@ h1 .gold {
   border-bottom: 1px solid var(--line);
 }
 
+
 .links-intro {
   margin-bottom: 40px;
 }
+
 
 .links-intro h2 {
   position: relative;
@@ -318,14 +360,18 @@ h1 .gold {
   color: var(--section-heading);
 
   font-size: clamp(42px, 5vw, 64px);
+
   line-height: 0.95;
+
   letter-spacing: -0.025em;
 }
+
 
 .links-intro h2::after {
   content: "";
 
   position: absolute;
+
   left: 0;
   bottom: 0;
 
@@ -354,18 +400,21 @@ h1 .gold {
   margin-bottom: 46px;
 
   padding:
-    24px
-    0
     28px
+    0
+    30px
     22px;
 
   border-left: 4px solid var(--gold);
+
   border-top: 1px solid var(--line);
+
   border-bottom: 1px solid var(--line);
 }
 
+
 .recruitment-marker {
-  padding-top: 3px;
+  padding-top: 4px;
 
   color: var(--gold);
 
@@ -377,8 +426,10 @@ h1 .gold {
   font-weight: 700;
 
   letter-spacing: 0.1em;
+
   text-transform: uppercase;
 }
+
 
 .recruitment-copy h3 {
   margin: 0;
@@ -391,25 +442,84 @@ h1 .gold {
     sans-serif;
 
   font-size: clamp(26px, 3vw, 38px);
+
   font-weight: 400;
 
   line-height: 1;
+
   letter-spacing: -0.025em;
+
   text-transform: uppercase;
 }
 
+
 .recruitment-copy p {
-  max-width: 650px;
+  max-width: 680px;
 
   margin:
-    10px
+    11px
     0
     0;
 
   color: var(--muted);
 
   font-size: 14px;
+
   line-height: 1.55;
+}
+
+
+/* Recruitment timeline link */
+
+.recruitment-link {
+  display: inline-block;
+
+  position: relative;
+
+  margin-top: 18px;
+
+  padding-bottom: 5px;
+
+  color: var(--gold);
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 0.07em;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+}
+
+
+.recruitment-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background: currentColor;
+
+  transform: scaleX(0.35);
+
+  transform-origin: left;
+
+  transition: transform 160ms ease;
+}
+
+
+.recruitment-link:hover::after {
+  transform: scaleX(1);
 }
 
 
@@ -422,6 +532,7 @@ h1 .gold {
 
   border-top: 1px solid #494640;
 }
+
 
 .link-item {
   position: relative;
@@ -437,15 +548,18 @@ h1 .gold {
   align-items: center;
 
   width: 100%;
+
   min-height: 144px;
 
   color: var(--text);
+
   text-decoration: none;
 
   border-bottom: 1px solid var(--line);
 
   transition: transform 160ms ease;
 }
+
 
 .link-item::before {
   content: "";
@@ -461,18 +575,22 @@ h1 .gold {
   background: var(--gold);
 
   transform: scaleX(0);
+
   transform-origin: left;
 
   transition: transform 180ms ease;
 }
 
+
 .link-item:hover {
   transform: translateX(8px);
 }
 
+
 .link-item:hover::before {
   transform: scaleX(1);
 }
+
 
 .link-no {
   color: #6e6961;
@@ -484,6 +602,7 @@ h1 .gold {
   font-size: 12px;
   font-weight: 700;
 }
+
 
 .link-copy small {
   display: block;
@@ -500,8 +619,10 @@ h1 .gold {
   font-weight: 700;
 
   letter-spacing: 0.1em;
+
   text-transform: uppercase;
 }
+
 
 .link-copy strong {
   display: block;
@@ -509,9 +630,12 @@ h1 .gold {
   color: var(--text);
 
   font-size: clamp(34px, 4vw, 54px);
+
   line-height: 1;
+
   letter-spacing: -0.03em;
 }
+
 
 .link-copy em {
   display: block;
@@ -521,6 +645,7 @@ h1 .gold {
   color: var(--muted);
 
   font-size: 14px;
+
   line-height: 1.45;
 
   font-style: normal;
@@ -551,6 +676,7 @@ h1 .gold {
   border-bottom: 1px solid var(--line);
 }
 
+
 .dog-date {
   display: grid;
 
@@ -569,15 +695,20 @@ h1 .gold {
   align-items: center;
 }
 
+
 .dog-date span:first-child {
   grid-area: month;
+
   align-self: end;
 }
 
+
 .dog-date span:last-child {
   grid-area: year;
+
   align-self: start;
 }
+
 
 .dog-date span {
   font-family:
@@ -587,6 +718,7 @@ h1 .gold {
   font-size: 11px;
   font-weight: 700;
 }
+
 
 .dog-date strong {
   grid-area: num;
@@ -599,16 +731,21 @@ h1 .gold {
     sans-serif;
 
   font-size: 68px;
+
   line-height: 0.8;
+
   font-weight: 400;
 }
+
 
 .dog-copy h2 {
   margin-top: 8px;
 
   font-size: clamp(32px, 4vw, 48px);
+
   line-height: 0.95;
 }
+
 
 .dog-copy > p:last-child {
   max-width: 610px;
@@ -621,8 +758,10 @@ h1 .gold {
   color: var(--muted);
 
   font-size: 14px;
+
   line-height: 1.5;
 }
+
 
 .dog-count {
   padding-left: 26px;
@@ -640,6 +779,7 @@ h1 .gold {
   white-space: nowrap;
 }
 
+
 .dog-count > span {
   display: block;
 
@@ -651,11 +791,14 @@ h1 .gold {
   font-weight: 700;
 
   letter-spacing: 0.1em;
+
   text-transform: uppercase;
 }
 
+
 .dog-count strong {
   color: var(--gold);
+
   font-size: 14px;
 }
 
@@ -666,6 +809,7 @@ h1 .gold {
 
 footer {
   display: flex;
+
   justify-content: space-between;
 
   gap: 20px;
@@ -682,6 +826,7 @@ footer {
     monospace;
 
   font-size: 10px;
+
   text-transform: uppercase;
 }
 
@@ -709,6 +854,7 @@ footer {
     14px;
 
   background: var(--gold);
+
   color: #111;
 
   font-family:
@@ -719,12 +865,14 @@ footer {
   font-weight: 700;
 
   opacity: 0;
+
   pointer-events: none;
 
   transition:
     opacity 150ms ease,
     transform 150ms ease;
 }
+
 
 .toast.visible {
   opacity: 1;
@@ -743,6 +891,7 @@ footer {
 
 :focus-visible {
   outline: 2px solid var(--gold);
+
   outline-offset: 4px;
 }
 
@@ -757,56 +906,63 @@ footer {
     width: min(100% - 34px, 760px);
   }
 
+
   .watermark {
     top: 22vh;
     right: -14vw;
   }
 
+
   .topbar {
     min-height: 100px;
   }
 
-  /* Tablet override */
+
   .identity img {
     width: 60px !important;
     height: 60px !important;
+
     flex-basis: 60px;
   }
+
 
   h1 {
     row-gap: 0.065em;
 
-    font-size:
-      clamp(
-        66px,
-        15vw,
-        100px
-      );
+    font-size: clamp(66px, 15vw, 100px);
   }
+
 
   h1 span:nth-child(2) {
     margin-left: 4vw;
   }
 
+
   h1 .gold {
     margin-left: 8vw;
   }
 
+
   .hero-lower {
     grid-template-columns: 1fr;
+
     gap: 24px;
+
     margin-top: 48px;
   }
+
 
   .hero-socials {
     justify-content: flex-start;
   }
+
 
   .dog-strip {
     grid-template-columns:
       120px
       1fr;
   }
+
 
   .dog-count {
     grid-column: 1 / -1;
@@ -817,8 +973,10 @@ footer {
       0;
 
     border-left: 0;
+
     border-top: 1px solid var(--line);
   }
+
 }
 
 
@@ -832,75 +990,86 @@ footer {
     width: calc(100% - 28px);
   }
 
+
   .topbar {
     min-height: 92px;
   }
+
 
   .identity {
     gap: 13px;
   }
 
-  /* Mobile override */
+
   .identity img {
     width: 58px !important;
     height: 58px !important;
+
     flex-basis: 58px;
 
     border-radius: 50%;
   }
 
+
   .identity strong {
     max-width: 175px;
+
     font-size: 12px;
   }
+
 
   .identity span {
     font-size: 9px;
   }
 
+
   .share-button {
     font-size: 10px;
   }
 
+
   .hero {
     min-height: 0;
+
     padding-top: 50px;
   }
+
 
   .eyebrow {
     font-size: 9px;
   }
+
 
   h1 {
     margin-top: 36px;
 
     row-gap: 0.075em;
 
-    font-size:
-      clamp(
-        54px,
-        18vw,
-        76px
-      );
+    font-size: clamp(54px, 18vw, 76px);
 
     line-height: 0.82;
   }
+
 
   h1 span:nth-child(2) {
     margin-left: 3vw;
   }
 
+
   h1 .gold {
     margin-left: 6vw;
   }
+
 
   .hero-lower {
     margin-top: 42px;
   }
 
+
   .hero-lower > p {
     font-size: 14px;
   }
+
 
   .hero-socials {
     gap:
@@ -908,9 +1077,11 @@ footer {
       18px;
   }
 
+
   .hero-socials a {
     font-size: 10px;
   }
+
 
   .links {
     padding:
@@ -919,13 +1090,16 @@ footer {
       72px;
   }
 
+
   .links-intro {
     margin-bottom: 32px;
   }
 
+
   .links-intro h2 {
     font-size: 42px;
   }
+
 
   .recruitment-notice {
     grid-template-columns: 1fr;
@@ -941,17 +1115,28 @@ footer {
       16px;
   }
 
+
   .recruitment-marker {
     font-size: 9px;
   }
+
 
   .recruitment-copy h3 {
     font-size: 28px;
   }
 
+
   .recruitment-copy p {
     font-size: 12px;
   }
+
+
+  .recruitment-link {
+    margin-top: 15px;
+
+    font-size: 9px;
+  }
+
 
   .link-item {
     grid-template-columns:
@@ -959,33 +1144,41 @@ footer {
       minmax(0, 1fr);
 
     gap: 10px;
+
     min-height: 132px;
   }
+
 
   .link-item:hover {
     transform: none;
   }
+
 
   .link-item::before {
     left: 40px;
     right: 0;
   }
 
+
   .link-no {
     font-size: 10px;
   }
+
 
   .link-copy small {
     font-size: 9px;
   }
 
+
   .link-copy strong {
     font-size: 30px;
   }
 
+
   .link-copy em {
     font-size: 12px;
   }
+
 
   .dog-strip {
     grid-template-columns: 1fr;
@@ -996,23 +1189,30 @@ footer {
     padding-bottom: 40px;
   }
 
+
   .dog-date {
     width: 125px;
   }
+
 
   .dog-copy h2 {
     font-size: 38px;
   }
 
+
   .dog-count {
     grid-column: 1;
+
     font-size: 10px;
   }
 
+
   footer {
     flex-direction: column;
+
     gap: 6px;
   }
+
 }
 
 
@@ -1027,4 +1227,5 @@ footer {
   *::after {
     transition: none !important;
   }
+
 }
